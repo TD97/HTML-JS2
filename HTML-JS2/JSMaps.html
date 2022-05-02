@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        const trainee=new Map([["Name","Trisha"],["WEEK1",24],["WEEK2",56]]);
+        trainee.set("height",167);
+        document.getElementById("demo").innerHTML = trainee.get("Name");
+        document.getElementById("demo1").innerHTML=trainee.size;
+        document.getElementById("demo2").innerHTML=trainee.has("WEEK1");
+        document.getElementById("demo3").innerHTML=trainee.delete("Name");
+        document.getElementById("demo4").innerHTML=trainee.keys();
+        document.getElementById("demo5").innerHTML=typeof trainee;
+
+        
+
+
+
+    </script>
+</body>
+</html>

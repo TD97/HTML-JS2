@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   
+    <style>
+        #resizable{width: 150px;height:150px;padding: 0.5em;}
+        #resizable h3{text-align: center;margin: 0;}
+        #draggable {width: 300px;height: 150px;padding: 1em;}
+        #progressbar{width: 200;color: aqua;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+        $(function(){
+            $("#datepicker").datepicker();
+        });
+        $(function(){
+            $("#progressbar").progressbar({
+                value:50
+            });
+        });
+        $(function(){
+            $("#resizable").resizable();
+        });
+        $(function(){
+            $("#draggable").draggable();
+        });
+        $(function(){
+            $("#accordion").accordion();
+        });
+        $(function(){
+            $("#dialog").dialog();
+        });
+        $(function(){
+            $('input').checkboxradio();
+        });
+    </script>
+</head>
+<body>
+<p>Date:<input type="text" id="datepicker"></p>
+<div id="progressbar"></div>
+<div id="resizable" class="ui-widget-content">
+    <h3 class="ui-widget-header">Resizable</h3>
+</div>
+<div id="draggable" class="ui-widget-content">
+    <p>Drag me around</p>
+</div>
+<div id="accordion">
+    <h3>Section1</h3>
+    <div>
+        <p>Hello Everyone</p>
+    </div>
+
+    <h3>Section2</h3>
+    <div>
+        <p>Welcome</p>
+    </div>
+</div>
+<div id="dialog" title="welcome">
+    <p>Welcome</p>
+</div>
+<div class="widget">
+
+    <fieldset>
+        <legend>Select a location:</legend>
+        <label for="radio-1">Bangalore</label>
+        <input type="radio" name ="radio-1" id="radio-1">
+        <label for="radio-2">Kolkata</label>
+        <input type="radio" name="radio-1" id="radio-2">
+    </fieldset>
+</div>
+</body>
+</html>

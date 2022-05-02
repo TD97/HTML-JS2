@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        currentDate1 = () => "Today's Date:"+Date();
+        myName =()=>"my name is Trisha";
+        let arrowfunction =(num1,num2)=>num1+num2;
+    </script>
+    <button type="submit" onclick=document.getElementById("demo").innerHTML=currentDate1();>Today's date</button>
+    <button type="submit" onclick=document.getElementById("demo1").innerHTML=arrowfunction(10,40);>Addition</button>
+    <button type="submit" onclick=document.getElementById("demo2").innerHTML=myName();>Name</button>
+</body>
+</html>

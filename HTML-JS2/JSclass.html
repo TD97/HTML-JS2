@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        class car{
+            constructor(company,category,model,color,variant,price,year){
+                this.company= company;
+                this.category = category;
+                this.model = model;
+                this.color=color;
+                this.variant=variant;
+                this.price=price;
+                this.year=year;
+            }
+            age(){
+                let date = new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+        function objrefer1(){
+            tataCar=new car("TATA","SUV","NEXON","RED","Petrol",1500000,2018);
+            return tataCar.company+""+tataCar.category;
+        }
+        mahindraCar = new car("mahindra","suv","XUV500","Red","Petrol",14500000,2015);
+        suzukiCar=new car("maruti","hatchback","Baleno","white","petrol",1200000,2010);
+
+    </script>
+    <button type="submit" onclick=document.getElementById("demo").innerHTML=objrefer1()>Tata</button>
+    <button type="submit" onclick=document.getElementById("demo1").innerHTML=mahindraCar.age()>Age</button>
+    <button type="submit" onclick=document.getElementById("demo2").innerHTML=mahindraCar.color>Mahindra</button>
+    <button type="submit" onclick=document.getElementById("demo3").innerHTML=suzukiCar.price>Suzuki</button>
+</body>
+</html>

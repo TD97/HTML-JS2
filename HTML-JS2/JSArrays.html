@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body style="font-size: large;">
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+        var table=["wood","fiber","steel","carbon","glass","plastic"];
+        const test=[20,30,40,50];
+        document.getElementById("demo4").innerHTML=test.pop();
+        document.getElementById("demo").innerHTML=table.join();
+        const price = new Array("200","450",700,"steel","leather");
+        document.getElementById("demo1").innerHTML=price.sort();
+        const FrontendTrainees=[];
+        FrontendTrainees[0]="Trisha";
+        FrontendTrainees[1]="Prudhvi";
+        FrontendTrainees[2]="Monika";
+        document.getElementById("demo2").innerHTML=FrontendTrainees.length;
+        const TraineeMarks ={ TraineeName:"Trisha",week1:45};
+        document.getElementById("demo3").innerHTML=TraineeMarks.TraineeName+"<br>"+TraineeMarks.week1;
+        document.getElementById("demo5").innerHTML=table.push("iron");
+        document.getElementById("demo6").innerHTML=test.shift();
+        document.getElementById("demo7").innerHTML=table.concat("iron");
+        document.getElementById("demo8").innerHTML=table.reverse();
+        
+
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-size: large;">
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        let number1=4.8900;
+        let number2= 4;
+        let number3 = 900e10;
+        let number4 = 800e-5;
+        let number5 = 9999999999999999999;
+        let number6 = 999999999999999;
+        let number7 = 0.2 + 0.1;
+        let number8 = (0.2*10 + 0.1*10)/10;
+        let number9 = 0.02 + 0.01;
+        let number10= "100";
+        let number11 = "30";
+        let number12=number10-number11;
+        let number13=number10*number11;
+        let number14=number10/number11;
+        let number15=number10%number11;
+        let number16=number10+number11;
+        let string1="trisha";
+        let number17=number10/string1;
+        let nan1 = NaN;
+        let number18 = number10+nan1;
+        let number19 =2/0;
+        let number20 = -2/0;
+        let number21= new Number(125);
+        document.getElementById("demo").innerHTML= number1 +"<br>"+ number2;
+        document.getElementById("demo1").innerHTML = number3 +"<br>" + number4+"<br>"+number5+"<br>"+number6+"<br>"+number7+"<br>"+number8;
+        document.getElementById("demo2").innerHTML =number9+"<br>"+number12+"<br>"+number13+"<br>"+number14+"<br>"+number15+"<br>"+number16+"<br>"+number17;
+        document.getElementById("demo3").innerHTML=isNaN(number17)+"<br>"+number18;
+        document.getElementById("demo4").innerHTML = number19+"<br>" +number20;
+        document.getElementById("demo5").innerHTML =typeof(number21);
+    </script>
+    
+</body>
+</html>

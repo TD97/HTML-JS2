@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id ="demo7"></p>
+    <script>
+        const trainee= new Set(["Trisha","Anup","Amit","Trisha","Arup"]);
+        var trainee1=new Set(["Apple","Bannana","Mango"]);
+        trainee.add("Akab");
+        let display=[];
+        trainee.forEach(function(disp){
+            display +=disp+"<hr>";
+
+        })
+        document.getElementById("demo").innerHTML=display;
+        document.getElementById("demo1").innerHTML=trainee.delete("Trisha");
+        document.getElementById("demo2").innerHTML=trainee.size;
+        document.getElementById("demo3").innerHTML=trainee.keys();
+        document.getElementById("demo4").innerHTML=trainee.has("Trisha");
+        document.getElementById("demo5").innerHTML=trainee.values();
+        document.getElementById("demo6").innerHTML=trainee1.clear();
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        function display1(value){
+            document.getElementById("demo").innerHTML=value;
+        }
+        let promise1=new Promise(function(myResolve,myReject){
+            let val1=0;
+            val1=7+6;
+            if(val1 == 0){
+                myResolve("ok");
+            }else{
+                myReject("Rejected");
+            }
+
+
+        });
+        promise1.then(
+            function(message){
+                display1(message);
+            },
+            function(error){
+                display1(error);
+            }
+        );
+
+    </script>
+</body>
+</html>
